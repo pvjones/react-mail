@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router"
 
 export default class Header extends React.Component {
 	render() {
@@ -16,6 +17,15 @@ export default class Header extends React.Component {
 				</div>
 
 				<div>
+					<Link to="/inbox">
+						<span style={styles.link}>Inbox</span>
+					</Link>
+					<Link to="/draft">
+						<span style={styles.link}>Draft</span>
+					</Link>
+					<Link to="/contacts">
+						<span style={styles.link}>Contacts</span>
+					</Link>
 				</div>
 			</header>
 		);
